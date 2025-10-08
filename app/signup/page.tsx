@@ -77,46 +77,28 @@ export default function SignupPage() {
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
           {/* Header */}
           <div className="text-center mb-8">
-            {/* Exact 3D Global Network Sphere Logo */}
+            {/* Exact Global Network Logo - Flat 2D Grid Pattern */}
             <div className="w-16 h-16 relative mx-auto mb-4">
               <div className="absolute inset-0">
                 <div className="w-full h-full relative">
-                  {/* Main Sphere Structure */}
-                  <div className="absolute inset-0 rounded-full relative">
-                    {/* Geodesic Network Lines */}
+                  {/* Dark Blue Circle Background */}
+                  <div className="absolute inset-0 rounded-full bg-blue-900 relative">
+                    {/* Light Blue Grid Lines */}
                     <div className="absolute inset-0">
-                      {/* Horizontal Lines */}
-                      <div className="absolute top-1/4 left-0 right-0 h-px bg-cyan-400/60"></div>
-                      <div className="absolute top-1/2 left-0 right-0 h-px bg-cyan-400/60"></div>
-                      <div className="absolute bottom-1/4 left-0 right-0 h-px bg-cyan-400/60"></div>
+                      {/* Horizontal Grid Lines */}
+                      <div className="absolute top-1/3 left-1/4 right-1/4 h-px bg-blue-300"></div>
+                      <div className="absolute top-2/3 left-1/4 right-1/4 h-px bg-blue-300"></div>
                       
-                      {/* Vertical Lines */}
-                      <div className="absolute left-1/4 top-0 bottom-0 w-px bg-cyan-400/60"></div>
-                      <div className="absolute left-1/2 top-0 bottom-0 w-px bg-cyan-400/60"></div>
-                      <div className="absolute right-1/4 top-0 bottom-0 w-px bg-cyan-400/60"></div>
+                      {/* Vertical Grid Lines */}
+                      <div className="absolute left-1/3 top-1/4 bottom-1/4 w-px bg-blue-300"></div>
+                      <div className="absolute left-2/3 top-1/4 bottom-1/4 w-px bg-blue-300"></div>
                       
-                      {/* Diagonal Lines */}
-                      <div className="absolute top-0 left-0 w-full h-full">
-                        <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border-l border-t border-cyan-400/40 rounded-tl-full"></div>
-                        <div className="absolute top-1/4 right-1/4 w-1/2 h-1/2 border-r border-t border-cyan-400/40 rounded-tr-full"></div>
-                        <div className="absolute bottom-1/4 left-1/4 w-1/2 h-1/2 border-l border-b border-cyan-400/40 rounded-bl-full"></div>
-                        <div className="absolute bottom-1/4 right-1/4 w-1/2 h-1/2 border-r border-b border-cyan-400/40 rounded-br-full"></div>
-                      </div>
+                      {/* Network Nodes at Intersections */}
+                      <div className="absolute top-1/3 left-1/3 w-1.5 h-1.5 bg-blue-200 rounded-full"></div>
+                      <div className="absolute top-1/3 left-2/3 w-1.5 h-1.5 bg-blue-200 rounded-full"></div>
+                      <div className="absolute top-2/3 left-1/3 w-1.5 h-1.5 bg-blue-200 rounded-full"></div>
+                      <div className="absolute top-2/3 left-2/3 w-1.5 h-1.5 bg-blue-200 rounded-full"></div>
                     </div>
-                    
-                    {/* Network Nodes */}
-                    <div className="absolute top-1/4 left-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/4 left-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/4 right-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/2 left-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/2 left-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute bottom-1/4 left-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute bottom-1/4 left-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
-                    
-                    {/* Outer Glow */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-400/20 blur-sm"></div>
                   </div>
                 </div>
               </div>
