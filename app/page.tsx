@@ -39,20 +39,20 @@ export default function Home() {
           {/* Logo with animation */}
           <div className="flex items-center gap-3 mb-8">
             <div 
-              className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-green-400 rounded-lg flex items-center justify-center"
+              className="w-8 h-8 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center"
               style={{ transform: `translateY(${logoY}px)` }}
             >
               <Brain className="w-5 h-5 text-black" />
             </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
               Guardian
             </h1>
-            <Moon className="w-5 h-5 text-white ml-auto cursor-pointer hover:text-cyan-400 transition-colors" />
+            <Moon className="w-5 h-5 text-white ml-auto cursor-pointer hover:text-blue-400 transition-colors" />
           </div>
 
           {/* Navigation */}
           <nav className="space-y-2">
-            <Link href="/dashboard" className="flex items-center gap-3 p-3 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/30 transition-all">
+            <Link href="/dashboard" className="flex items-center gap-3 p-3 rounded-lg bg-blue-500/20 text-blue-400 border border-blue-500/30 hover:bg-blue-500/30 transition-all">
               <BarChart3 className="w-5 h-5" />
               Dashboard
             </Link>
@@ -85,8 +85,51 @@ export default function Home() {
         {/* Hero Section */}
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
+            {/* 3D Global Network Logo */}
+            <div className="flex justify-center mb-8">
+              <div className="relative">
+                <div className="w-32 h-32 relative">
+                  {/* 3D Global Network Sphere */}
+                  <div className="absolute inset-0 animate-spin-slow">
+                    <div className="w-full h-full rounded-full border-2 border-blue-400/30 relative">
+                      {/* Network Nodes */}
+                      <div className="absolute top-2 left-1/2 w-2 h-2 bg-blue-400 rounded-full transform -translate-x-1/2 animate-pulse"></div>
+                      <div className="absolute bottom-2 left-1/2 w-2 h-2 bg-cyan-400 rounded-full transform -translate-x-1/2 animate-pulse"></div>
+                      <div className="absolute left-2 top-1/2 w-2 h-2 bg-blue-400 rounded-full transform -translate-y-1/2 animate-pulse"></div>
+                      <div className="absolute right-2 top-1/2 w-2 h-2 bg-cyan-400 rounded-full transform -translate-y-1/2 animate-pulse"></div>
+                      <div className="absolute top-1/4 left-1/4 w-1.5 h-1.5 bg-blue-300 rounded-full animate-pulse"></div>
+                      <div className="absolute top-1/4 right-1/4 w-1.5 h-1.5 bg-cyan-300 rounded-full animate-pulse"></div>
+                      <div className="absolute bottom-1/4 left-1/4 w-1.5 h-1.5 bg-blue-300 rounded-full animate-pulse"></div>
+                      <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-cyan-300 rounded-full animate-pulse"></div>
+                      
+                      {/* Connection Lines */}
+                      <div className="absolute inset-0">
+                        <div className="absolute top-2 left-1/2 w-px h-16 bg-gradient-to-b from-blue-400/50 to-transparent transform -translate-x-1/2"></div>
+                        <div className="absolute bottom-2 left-1/2 w-px h-16 bg-gradient-to-t from-cyan-400/50 to-transparent transform -translate-x-1/2"></div>
+                        <div className="absolute left-2 top-1/2 w-16 h-px bg-gradient-to-r from-blue-400/50 to-transparent transform -translate-y-1/2"></div>
+                        <div className="absolute right-2 top-1/2 w-16 h-px bg-gradient-to-l from-cyan-400/50 to-transparent transform -translate-y-1/2"></div>
+                      </div>
+                      
+                      {/* Glow Effect */}
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-cyan-400/20 blur-xl"></div>
+                    </div>
+                  </div>
+                  
+                  {/* Outer Ring */}
+                  <div className="absolute inset-0 animate-spin-reverse">
+                    <div className="w-full h-full rounded-full border border-blue-400/20 relative">
+                      <div className="absolute top-0 left-1/2 w-1 h-1 bg-blue-400 rounded-full transform -translate-x-1/2"></div>
+                      <div className="absolute bottom-0 left-1/2 w-1 h-1 bg-cyan-400 rounded-full transform -translate-x-1/2"></div>
+                      <div className="absolute left-0 top-1/2 w-1 h-1 bg-blue-400 rounded-full transform -translate-y-1/2"></div>
+                      <div className="absolute right-0 top-1/2 w-1 h-1 bg-cyan-400 rounded-full transform -translate-y-1/2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <h1 className="text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-yellow-400 via-green-400 to-cyan-400 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 text-transparent bg-clip-text">
                 Portfolio Intelligence.
               </span>
               <br />
@@ -99,14 +142,14 @@ export default function Home() {
             
             {/* CTA Buttons */}
             <div className="flex gap-4 justify-center mb-16">
-              <button className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-green-400 text-black font-bold rounded-lg hover:from-yellow-300 hover:to-green-300 transition-all transform hover:scale-105 flex items-center gap-2">
+              <Link href="/signup" className="px-8 py-4 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-blue-300 hover:to-cyan-300 transition-all transform hover:scale-105 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5" />
                 Sign Up
-              </button>
-              <button className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105 flex items-center gap-2">
+              </Link>
+              <Link href="/dashboard" className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-blue-300 transition-all transform hover:scale-105 flex items-center gap-2">
                 <Star className="w-5 h-5" />
-                View Pricing
-              </button>
+                View Dashboard
+              </Link>
             </div>
 
             {/* Metrics Cards */}
@@ -160,7 +203,7 @@ export default function Home() {
           {/* Why Choose Guardian Section */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-center mb-4">
-              Why Choose <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>?
+              Why Choose <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian</span>?
             </h2>
             <p className="text-xl text-gray-300 text-center mb-12">
               Experience the future of portfolio management with cutting-edge AI and real-time analytics
@@ -239,7 +282,7 @@ export default function Home() {
           {/* Guardian Plans Section */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-center mb-4">
-              <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian Plans</span>
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian Plans</span>
             </h2>
             <p className="text-xl text-gray-300 text-center mb-12">
               Choose your plan. All tiers unlock the full Guardian experience equally.
@@ -251,7 +294,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-4">Guardian</h3>
                 <div className="text-3xl font-bold text-white mb-4">$150 per month</div>
                 <p className="text-gray-300 mb-6">Flexible monthly access to all features</p>
-                <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+                <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                   Subscribe Now
                 </button>
               </div>
@@ -268,7 +311,7 @@ export default function Home() {
                 <div className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
                   Save $300/year
                 </div>
-                <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+                <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                   Subscribe Now
                 </button>
               </div>
@@ -280,7 +323,7 @@ export default function Home() {
                 <div className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
                   Save $600
                 </div>
-                <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+                <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                   Subscribe Now
                 </button>
               </div>
@@ -290,9 +333,9 @@ export default function Home() {
           {/* Everything You Get Section */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-center mb-4">
-              Everything You Get with <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>
+              Everything You Get with <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-green-400 mx-auto mb-12"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto mb-12"></div>
             
             {/* Features Grid */}
             <div className="grid grid-cols-3 gap-6 mb-16">
@@ -365,7 +408,7 @@ export default function Home() {
           {/* Why Choose Guardian Section */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-center mb-4">
-              Why Choose <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>?
+              Why Choose <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian</span>?
             </h2>
             <p className="text-xl text-gray-300 text-center mb-12">
               A revolution in portfolio analytics — built to give power back to investors.
@@ -399,13 +442,13 @@ export default function Home() {
           {/* Ready to Become a Guardian Section */}
           <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 backdrop-blur-sm border border-white/10 rounded-2xl p-12 text-center">
             <h2 className="text-4xl font-bold mb-4">
-              Ready to Become a <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>?
+              Ready to Become a <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian</span>?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
               Join thousands of investors who trust Guardian for their portfolio management needs.
             </p>
             <div className="flex gap-4 justify-center">
-              <Link href="/signup" className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+              <Link href="/signup" className="px-8 py-4 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                 Start Your Journey
               </Link>
               <Link href="/pricing" className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-bold rounded-lg hover:bg-blue-400 hover:text-black transition-all transform hover:scale-105">

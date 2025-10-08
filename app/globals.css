@@ -33,9 +33,9 @@ body {
   border-radius: 0.75rem;
 }
 
-/* Guardian Neon Effects */
+/* Guardian Neon Effects - Updated to Blue/Cyan Theme */
 .neon-glow {
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.3), 0 0 60px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3), 0 0 60px rgba(59, 130, 246, 0.1);
 }
 
 .neon-glow-green {
@@ -50,13 +50,17 @@ body {
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3), 0 0 60px rgba(59, 130, 246, 0.1);
 }
 
+.neon-glow-cyan {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.5), 0 0 40px rgba(34, 211, 238, 0.3), 0 0 60px rgba(34, 211, 238, 0.1);
+}
+
 .neon-glow-red {
   box-shadow: 0 0 20px rgba(239, 68, 68, 0.5), 0 0 40px rgba(239, 68, 68, 0.3), 0 0 60px rgba(239, 68, 68, 0.1);
 }
 
-/* Hover Effects */
+/* Hover Effects - Updated to Blue/Cyan Theme */
 .hover-glow:hover {
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.5), 0 0 90px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.5), 0 0 90px rgba(59, 130, 246, 0.2);
   transform: translateY(-2px);
 }
 
@@ -72,6 +76,11 @@ body {
 
 .hover-glow-blue:hover {
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.5), 0 0 90px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+.hover-glow-cyan:hover {
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.8), 0 0 60px rgba(34, 211, 238, 0.5), 0 0 90px rgba(34, 211, 238, 0.2);
   transform: translateY(-2px);
 }
 
@@ -112,9 +121,47 @@ body {
 
 @keyframes pulseGlow {
   0%, 100% { 
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
   }
   50% { 
-    box-shadow: 0 0 40px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.4);
   }
+}
+
+/* 3D Logo Animations */
+.animate-spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 15s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Network Node Hover Effects */
+.network-node {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.network-node:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
 }

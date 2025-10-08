@@ -45,10 +45,10 @@ export default function SignupPage() {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-green-400 rounded-lg flex items-center justify-center logo-hover">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center logo-hover">
               <Brain className="w-5 h-5 text-black" />
             </div>
-            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">
+            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
               Guardian
             </Link>
             <Moon className="w-5 h-5 text-white ml-auto cursor-pointer hover:text-cyan-400 transition-colors" />
@@ -77,11 +77,11 @@ export default function SignupPage() {
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 to-green-400 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4">
               <Shield className="w-8 h-8 text-black" />
             </div>
             <h1 className="text-3xl font-bold text-white mb-2">
-              Join <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>
+              Join <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian</span>
             </h1>
             <p className="text-gray-300">
               Create your account and start your portfolio intelligence journey.
@@ -201,7 +201,7 @@ export default function SignupPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-4 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
+              className="w-full py-4 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
             >
               Create My Account
             </button>

@@ -25,10 +25,10 @@ export default function PricingPage() {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-green-400 rounded-lg flex items-center justify-center logo-hover">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center logo-hover">
               <Brain className="w-5 h-5 text-black" />
             </div>
-            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">
+            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
               Guardian
             </Link>
             <Moon className="w-5 h-5 text-white ml-auto cursor-pointer hover:text-cyan-400 transition-colors" />
@@ -58,7 +58,7 @@ export default function PricingPage() {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian Plans</span>
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian Plans</span>
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               Choose your plan. All tiers unlock the full Guardian experience equally.
@@ -78,7 +78,7 @@ export default function PricingPage() {
               <h3 className="text-2xl font-bold text-white mb-4">Guardian</h3>
               <div className="text-3xl font-bold text-white mb-4">$150 per month</div>
               <p className="text-gray-300 mb-6">Flexible monthly access to all features</p>
-              <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+              <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                 Subscribe Now
               </button>
             </div>
@@ -103,7 +103,7 @@ export default function PricingPage() {
               <div className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
                 Save $300/year
               </div>
-              <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+              <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                 Subscribe Now
               </button>
             </div>
@@ -122,7 +122,7 @@ export default function PricingPage() {
               <div className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
                 Save $600
               </div>
-              <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+              <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                 Subscribe Now
               </button>
             </div>
@@ -131,9 +131,9 @@ export default function PricingPage() {
           {/* Everything You Get Section */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-center mb-4">
-              Everything You Get with <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>
+              Everything You Get with <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-green-400 mx-auto mb-12"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto mb-12"></div>
             
             {/* Features Grid */}
             <div className="grid grid-cols-3 gap-6">
@@ -166,13 +166,13 @@ export default function PricingPage() {
           {/* Call to Action */}
           <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 backdrop-blur-sm border border-white/10 rounded-2xl p-12 text-center">
             <h2 className="text-4xl font-bold mb-4">
-              Ready to Become a <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>?
+              Ready to Become a <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian</span>?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
               Join thousands of investors who trust Guardian for their portfolio management needs.
             </p>
             <div className="flex gap-4 justify-center">
-              <Link href="/signup" className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+              <Link href="/signup" className="px-8 py-4 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                 Start Your Journey
               </Link>
               <Link href="/" className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-bold rounded-lg hover:bg-blue-400 hover:text-black transition-all transform hover:scale-105">
