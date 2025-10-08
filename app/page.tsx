@@ -236,6 +236,166 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Guardian Plans Section */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-center mb-4">
+              <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian Plans</span>
+            </h2>
+            <p className="text-xl text-gray-300 text-center mb-12">
+              Choose your plan. All tiers unlock the full Guardian experience equally.
+            </p>
+            
+            {/* Pricing Cards */}
+            <div className="grid grid-cols-3 gap-8 mb-16">
+              <div className="bg-white/5 backdrop-blur-sm border border-cyan-500/30 rounded-xl p-8 hover-glow cursor-pointer neon-glow">
+                <h3 className="text-2xl font-bold text-white mb-4">Guardian</h3>
+                <div className="text-3xl font-bold text-white mb-4">$150 per month</div>
+                <p className="text-gray-300 mb-6">Flexible monthly access to all features</p>
+                <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+                  Subscribe Now
+                </button>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-yellow-500/60 rounded-xl p-8 hover-glow cursor-pointer neon-glow relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-gradient-to-r from-yellow-400 to-green-400 text-black px-4 py-1 rounded-full text-sm font-bold">
+                    Most Popular
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Guardian+</h3>
+                <div className="text-3xl font-bold text-white mb-4">$1500 per year</div>
+                <p className="text-gray-300 mb-2">Full access with savings</p>
+                <div className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
+                  Save $300/year
+                </div>
+                <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+                  Subscribe Now
+                </button>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-blue-500/30 rounded-xl p-8 hover-glow cursor-pointer neon-glow">
+                <h3 className="text-2xl font-bold text-white mb-4">Guardian Elite</h3>
+                <div className="text-3xl font-bold text-white mb-4">$3000 for 2 years</div>
+                <p className="text-gray-300 mb-2">Ultimate commitment to growth</p>
+                <div className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block">
+                  Save $600
+                </div>
+                <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+                  Subscribe Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Everything You Get Section */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-center mb-4">
+              Everything You Get with <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-green-400 mx-auto mb-12"></div>
+            
+            {/* Features Grid */}
+            <div className="grid grid-cols-3 gap-6 mb-16">
+              <div className="bg-white/5 backdrop-blur-sm border border-blue-500/30 rounded-xl p-6 hover-glow-blue cursor-pointer neon-glow-blue">
+                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                  <BarChart3 className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Unlimited portfolio tracking</h3>
+                <p className="text-gray-300 text-sm">Track unlimited portfolios and assets</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-yellow-500/30 rounded-xl p-6 hover-glow cursor-pointer neon-glow">
+                <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4">
+                  <Brain className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">AI-powered insights</h3>
+                <p className="text-gray-300 text-sm">Advanced machine learning analytics</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-cyan-500/30 rounded-xl p-6 hover-glow cursor-pointer neon-glow">
+                <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center mb-4">
+                  <Zap className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Real-time market data</h3>
+                <p className="text-gray-300 text-sm">Live price feeds and instant updates</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-blue-500/30 rounded-xl p-6 hover-glow-blue cursor-pointer neon-glow-blue">
+                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                  <Activity className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Automated rebalancing</h3>
+                <p className="text-gray-300 text-sm">Smart portfolio optimization</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-purple-500/30 rounded-xl p-6 hover-glow-purple cursor-pointer neon-glow-purple">
+                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                  <TrendingUp className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Predictive analytics</h3>
+                <p className="text-gray-300 text-sm">Future performance forecasting</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-green-500/30 rounded-xl p-6 hover-glow-green cursor-pointer neon-glow-green">
+                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                  <Shield className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Private key security</h3>
+                <p className="text-gray-300 text-sm">Non-custodial, your keys your assets</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-yellow-500/30 rounded-xl p-6 hover-glow cursor-pointer neon-glow">
+                <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Community access</h3>
+                <p className="text-gray-300 text-sm">Connect with fellow investors</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-cyan-500/30 rounded-xl p-6 hover-glow cursor-pointer neon-glow">
+                <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center mb-4">
+                  <Star className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">API access</h3>
+                <p className="text-gray-300 text-sm">Integrate with external tools</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Why Choose Guardian Section */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-center mb-4">
+              Why Choose <span className="bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text">Guardian</span>?
+            </h2>
+            <p className="text-xl text-gray-300 text-center mb-12">
+              A revolution in portfolio analytics — built to give power back to investors.
+            </p>
+            
+            {/* About Cards */}
+            <div className="grid grid-cols-3 gap-8">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:border-cyan-400/60 hover:bg-white/10 transition-all cursor-pointer">
+                <h3 className="text-xl font-bold text-white mb-4">Why Guardian Was Created</h3>
+                <p className="text-gray-300">
+                  Guardian was born from a vision to bring transparency, accuracy, and AI-assisted portfolio mastery to every investor. We believe that sophisticated portfolio analysis shouldn&apos;t be reserved for institutional players — every individual investor deserves access to professional-grade insights and tools.
+                </p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-purple-500/60 rounded-xl p-8 hover:border-purple-400/80 hover:bg-white/10 transition-all cursor-pointer neon-glow-purple">
+                <h3 className="text-xl font-bold text-white mb-4">Guardian&apos;s Mission</h3>
+                <p className="text-gray-300">
+                  We&apos;re leading the next evolution in portfolio analysis through non-custodial AI, user ownership, and predictive analytics. Our mission is to democratize investment intelligence by making complex data analysis accessible, understandable, and actionable for investors of all levels.
+                </p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:border-cyan-400/60 hover:bg-white/10 transition-all cursor-pointer">
+                <h3 className="text-xl font-bold text-white mb-4">Our Impact</h3>
+                <p className="text-gray-300">
+                  Guardian is transforming investment intelligence by automating complex data analysis and making professional-grade insights accessible to everyone. We&apos;re empowering investors to make smarter decisions, optimize their portfolios, and achieve their financial goals with confidence and clarity.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Ready to Become a Guardian Section */}
           <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 backdrop-blur-sm border border-white/10 rounded-2xl p-12 text-center">
             <h2 className="text-4xl font-bold mb-4">
@@ -245,12 +405,12 @@ export default function Home() {
               Join thousands of investors who trust Guardian for their portfolio management needs.
             </p>
             <div className="flex gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
+              <Link href="/signup" className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-green-400 text-black font-bold rounded-lg hover:from-cyan-300 hover:to-green-300 transition-all transform hover:scale-105">
                 Start Your Journey
-              </button>
-              <button className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-bold rounded-lg hover:bg-blue-400 hover:text-black transition-all transform hover:scale-105">
-                Learn More
-              </button>
+              </Link>
+              <Link href="/pricing" className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-bold rounded-lg hover:bg-blue-400 hover:text-black transition-all transform hover:scale-105">
+                View Pricing
+              </Link>
             </div>
           </div>
         </div>
