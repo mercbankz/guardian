@@ -32,3 +32,89 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.75rem;
 }
+
+/* Guardian Neon Effects */
+.neon-glow {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.3), 0 0 60px rgba(0, 255, 255, 0.1);
+}
+
+.neon-glow-green {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.5), 0 0 40px rgba(34, 197, 94, 0.3), 0 0 60px rgba(34, 197, 94, 0.1);
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.3), 0 0 60px rgba(168, 85, 247, 0.1);
+}
+
+.neon-glow-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3), 0 0 60px rgba(59, 130, 246, 0.1);
+}
+
+.neon-glow-red {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.5), 0 0 40px rgba(239, 68, 68, 0.3), 0 0 60px rgba(239, 68, 68, 0.1);
+}
+
+/* Hover Effects */
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.5), 0 0 90px rgba(0, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.hover-glow-green:hover {
+  box-shadow: 0 0 30px rgba(34, 197, 94, 0.8), 0 0 60px rgba(34, 197, 94, 0.5), 0 0 90px rgba(34, 197, 94, 0.2);
+  transform: translateY(-2px);
+}
+
+.hover-glow-purple:hover {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.8), 0 0 60px rgba(168, 85, 247, 0.5), 0 0 90px rgba(168, 85, 247, 0.2);
+  transform: translateY(-2px);
+}
+
+.hover-glow-blue:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.5), 0 0 90px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+.hover-glow-red:hover {
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.8), 0 0 60px rgba(239, 68, 68, 0.5), 0 0 90px rgba(239, 68, 68, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Gradient Text Animation */
+.gradient-text {
+  background: linear-gradient(45deg, #00ffff, #00ff00, #ffff00, #ff00ff);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Logo Hover Animation */
+.logo-hover {
+  animation: logoFloat 2s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Pulse Animation */
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.4);
+  }
+}
