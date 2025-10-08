@@ -77,8 +77,36 @@ export default function SignupPage() {
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Shield className="w-8 h-8 text-black" />
+            {/* 3D Global Network Logo */}
+            <div className="w-16 h-16 relative mx-auto mb-4">
+              <div className="absolute inset-0 animate-spin-slow">
+                <div className="w-full h-full relative">
+                  <div className="absolute inset-0 rounded-full border-2 border-cyan-400/50 relative">
+                    {/* Network Nodes */}
+                    <div className="absolute top-2 left-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full transform -translate-x-1/2 animate-pulse"></div>
+                    <div className="absolute bottom-2 left-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full transform -translate-x-1/2 animate-pulse"></div>
+                    <div className="absolute left-2 top-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full transform -translate-y-1/2 animate-pulse"></div>
+                    <div className="absolute right-2 top-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full transform -translate-y-1/2 animate-pulse"></div>
+                    
+                    {/* Secondary Nodes */}
+                    <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-cyan-300 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/4 right-1/4 w-1 h-1 bg-cyan-300 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/4 left-1/4 w-1 h-1 bg-cyan-300 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/4 right-1/4 w-1 h-1 bg-cyan-300 rounded-full animate-pulse"></div>
+                    
+                    {/* Connection Lines */}
+                    <div className="absolute inset-0">
+                      <div className="absolute top-2 left-1/2 w-px h-8 bg-gradient-to-b from-cyan-400/60 to-transparent transform -translate-x-1/2"></div>
+                      <div className="absolute bottom-2 left-1/2 w-px h-8 bg-gradient-to-t from-cyan-400/60 to-transparent transform -translate-x-1/2"></div>
+                      <div className="absolute left-2 top-1/2 w-8 h-px bg-gradient-to-r from-cyan-400/60 to-transparent transform -translate-y-1/2"></div>
+                      <div className="absolute right-2 top-1/2 w-8 h-px bg-gradient-to-l from-cyan-400/60 to-transparent transform -translate-y-1/2"></div>
+                    </div>
+                    
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-400/20 blur-sm"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <h1 className="text-3xl font-bold text-white mb-2">
               Join <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Guardian</span>

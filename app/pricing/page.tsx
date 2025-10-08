@@ -25,8 +25,30 @@ export default function PricingPage() {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center logo-hover">
-              <Brain className="w-5 h-5 text-black" />
+            {/* 3D Global Network Logo */}
+            <div className="w-8 h-8 relative">
+              <div className="absolute inset-0 animate-spin-slow">
+                <div className="w-full h-full relative">
+                  <div className="absolute inset-0 rounded-full border border-cyan-400/50 relative">
+                    {/* Network Nodes */}
+                    <div className="absolute top-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full transform -translate-x-1/2 animate-pulse"></div>
+                    <div className="absolute bottom-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full transform -translate-x-1/2 animate-pulse"></div>
+                    <div className="absolute left-1 top-1/2 w-1 h-1 bg-cyan-400 rounded-full transform -translate-y-1/2 animate-pulse"></div>
+                    <div className="absolute right-1 top-1/2 w-1 h-1 bg-cyan-400 rounded-full transform -translate-y-1/2 animate-pulse"></div>
+                    
+                    {/* Connection Lines */}
+                    <div className="absolute inset-0">
+                      <div className="absolute top-1 left-1/2 w-px h-4 bg-gradient-to-b from-cyan-400/60 to-transparent transform -translate-x-1/2"></div>
+                      <div className="absolute bottom-1 left-1/2 w-px h-4 bg-gradient-to-t from-cyan-400/60 to-transparent transform -translate-x-1/2"></div>
+                      <div className="absolute left-1 top-1/2 w-4 h-px bg-gradient-to-r from-cyan-400/60 to-transparent transform -translate-y-1/2"></div>
+                      <div className="absolute right-1 top-1/2 w-4 h-px bg-gradient-to-l from-cyan-400/60 to-transparent transform -translate-y-1/2"></div>
+                    </div>
+                    
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-400/20 blur-sm"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
               Guardian
