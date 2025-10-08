@@ -25,44 +25,41 @@ export default function PricingPage() {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            {/* Futuristic Glowing Interconnected Sphere Logo */}
+            {/* Wireframe Sphere with Interconnected Nodes Logo */}
             <div className="w-8 h-8 relative">
-              <div className="absolute inset-0 animate-spin-slow">
+              <div className="absolute inset-0">
                 <div className="w-full h-full relative">
-                  {/* Main Glowing Sphere */}
+                  {/* Wireframe Sphere Structure */}
                   <div className="absolute inset-0 rounded-full relative">
-                    {/* Geodesic Network Lines */}
+                    {/* Geodesic Wireframe Lines */}
                     <div className="absolute inset-0">
-                      {/* Horizontal Curved Lines */}
-                      <div className="absolute top-1/4 left-1/4 right-1/4 h-px bg-cyan-400/80 transform rotate-12"></div>
-                      <div className="absolute top-1/2 left-1/4 right-1/4 h-px bg-cyan-400/80"></div>
-                      <div className="absolute top-3/4 left-1/4 right-1/4 h-px bg-cyan-400/80 transform -rotate-12"></div>
+                      {/* Horizontal Wireframe Lines */}
+                      <div className="absolute top-1/4 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
+                      <div className="absolute top-1/2 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
+                      <div className="absolute top-3/4 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
                       
-                      {/* Vertical Curved Lines */}
-                      <div className="absolute left-1/4 top-1/4 bottom-1/4 w-px bg-cyan-400/80 transform rotate-12"></div>
-                      <div className="absolute left-1/2 top-1/4 bottom-1/4 w-px bg-cyan-400/80"></div>
-                      <div className="absolute left-3/4 top-1/4 bottom-1/4 w-px bg-cyan-400/80 transform -rotate-12"></div>
+                      {/* Vertical Wireframe Lines */}
+                      <div className="absolute left-1/4 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
+                      <div className="absolute left-1/2 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
+                      <div className="absolute left-3/4 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
                       
-                      {/* Diagonal Network Lines */}
-                      <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border-l border-t border-cyan-400/60 rounded-tl-full transform rotate-45"></div>
-                      <div className="absolute top-1/4 right-1/4 w-1/2 h-1/2 border-r border-t border-cyan-400/60 rounded-tr-full transform -rotate-45"></div>
-                      <div className="absolute bottom-1/4 left-1/4 w-1/2 h-1/2 border-l border-b border-cyan-400/60 rounded-bl-full transform -rotate-45"></div>
-                      <div className="absolute bottom-1/4 right-1/4 w-1/2 h-1/2 border-r border-b border-cyan-400/60 rounded-br-full transform rotate-45"></div>
+                      {/* Diagonal Wireframe Lines */}
+                      <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border-l border-t border-cyan-400/70 rounded-tl-full"></div>
+                      <div className="absolute top-1/4 right-1/4 w-1/2 h-1/2 border-r border-t border-cyan-400/70 rounded-tr-full"></div>
+                      <div className="absolute bottom-1/4 left-1/4 w-1/2 h-1/2 border-l border-b border-cyan-400/70 rounded-bl-full"></div>
+                      <div className="absolute bottom-1/4 right-1/4 w-1/2 h-1/2 border-r border-b border-cyan-400/70 rounded-br-full"></div>
                     </div>
                     
-                    {/* Glowing Network Nodes */}
-                    <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/4 left-1/2 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/4 right-1/4 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute bottom-1/4 left-1/4 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <div className="absolute bottom-1/4 right-1/4 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
-                    
-                    {/* Glowing Halo Effect */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/30 to-blue-400/30 blur-sm"></div>
+                    {/* Bright Network Nodes */}
+                    <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute top-1/4 left-1/2 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute top-1/4 right-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute bottom-1/4 left-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute bottom-1/4 right-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
                   </div>
                 </div>
               </div>
