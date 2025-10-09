@@ -25,53 +25,20 @@ export default function PricingPage() {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            {/* 3D Animated Dragonfly Logo */}
-            <div className="w-8 h-8 relative">
-              <div className="absolute inset-0">
-                <div className="w-full h-full relative">
-                  {/* Dragonfly Body */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    {/* Central Body */}
-                    <div className="w-1 h-3 bg-gradient-to-b from-cyan-400 to-blue-400 rounded-full relative">
-                      {/* Body Glow */}
-                      <div className="absolute inset-0 bg-gradient-to-b from-cyan-400/50 to-blue-400/50 rounded-full blur-sm"></div>
-                    </div>
-                    
-                    {/* Wings - Top Left */}
-                    <div className="absolute top-0 left-0 transform -translate-x-1 -translate-y-1">
-                      <div className="dragonfly-wing-top-left">
-                        <div className="w-2 h-1 bg-gradient-to-r from-cyan-400/80 to-transparent rounded-full transform rotate-45 origin-left"></div>
-                        <div className="w-1.5 h-0.5 bg-gradient-to-r from-cyan-400/60 to-transparent rounded-full transform rotate-30 origin-left mt-0.5"></div>
-                        <div className="w-1 h-0.5 bg-gradient-to-r from-cyan-400/40 to-transparent rounded-full transform rotate-15 origin-left mt-0.5"></div>
-                      </div>
-                    </div>
-                    
-                    {/* Wings - Top Right */}
-                    <div className="absolute top-0 right-0 transform translate-x-1 -translate-y-1">
-                      <div className="dragonfly-wing-top-right">
-                        <div className="w-2 h-1 bg-gradient-to-l from-cyan-400/80 to-transparent rounded-full transform -rotate-45 origin-right"></div>
-                        <div className="w-1.5 h-0.5 bg-gradient-to-l from-cyan-400/60 to-transparent rounded-full transform -rotate-30 origin-right mt-0.5"></div>
-                        <div className="w-1 h-0.5 bg-gradient-to-l from-cyan-400/40 to-transparent rounded-full transform -rotate-15 origin-right mt-0.5"></div>
-                      </div>
-                    </div>
-                    
-                    {/* Wings - Bottom Left */}
-                    <div className="absolute bottom-0 left-0 transform -translate-x-1 translate-y-1">
-                      <div className="dragonfly-wing-bottom-left">
-                        <div className="w-2 h-1 bg-gradient-to-r from-cyan-400/80 to-transparent rounded-full transform -rotate-45 origin-left"></div>
-                        <div className="w-1.5 h-0.5 bg-gradient-to-r from-cyan-400/60 to-transparent rounded-full transform -rotate-30 origin-left mt-0.5"></div>
-                        <div className="w-1 h-0.5 bg-gradient-to-r from-cyan-400/40 to-transparent rounded-full transform -rotate-15 origin-left mt-0.5"></div>
-                      </div>
-                    </div>
-                    
-                    {/* Wings - Bottom Right */}
-                    <div className="absolute bottom-0 right-0 transform translate-x-1 translate-y-1">
-                      <div className="dragonfly-wing-bottom-right">
-                        <div className="w-2 h-1 bg-gradient-to-l from-cyan-400/80 to-transparent rounded-full transform rotate-45 origin-right"></div>
-                        <div className="w-1.5 h-0.5 bg-gradient-to-l from-cyan-400/60 to-transparent rounded-full transform rotate-30 origin-right mt-0.5"></div>
-                        <div className="w-1 h-0.5 bg-gradient-to-l from-cyan-400/40 to-transparent rounded-full transform rotate-15 origin-right mt-0.5"></div>
-                      </div>
-                    </div>
+            {/* Glowing Sword Logo */}
+            <div className="w-8 h-8 relative cursor-pointer hover:scale-110 transition-transform duration-300">
+              <div className="relative w-full h-full">
+                {/* Glowing Sword Icon */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-6 h-8 relative">
+                    {/* Sword Blade */}
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-b from-cyan-400 to-green-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
+                    {/* Sword Handle */}
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3 h-2 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full"></div>
+                    {/* Cross Guard */}
+                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-0.5 bg-gradient-to-r from-cyan-400 to-green-400"></div>
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-400/30 to-green-400/30 blur-sm rounded-full"></div>
                   </div>
                 </div>
               </div>
