@@ -58,6 +58,10 @@ body {
   box-shadow: 0 0 20px rgba(239, 68, 68, 0.5), 0 0 40px rgba(239, 68, 68, 0.3), 0 0 60px rgba(239, 68, 68, 0.1);
 }
 
+.neon-glow-orange {
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.5), 0 0 40px rgba(249, 115, 22, 0.3), 0 0 60px rgba(249, 115, 22, 0.1);
+}
+
 /* Hover Effects - Updated to Blue/Cyan Theme */
 .hover-glow:hover {
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.5), 0 0 90px rgba(59, 130, 246, 0.2);
@@ -86,6 +90,11 @@ body {
 
 .hover-glow-red:hover {
   box-shadow: 0 0 30px rgba(239, 68, 68, 0.8), 0 0 60px rgba(239, 68, 68, 0.5), 0 0 90px rgba(239, 68, 68, 0.2);
+  transform: translateY(-2px);
+}
+
+.hover-glow-orange:hover {
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.8), 0 0 60px rgba(249, 115, 22, 0.5), 0 0 90px rgba(249, 115, 22, 0.2);
   transform: translateY(-2px);
 }
 
