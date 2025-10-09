@@ -218,3 +218,37 @@ body {
     transform: rotate(30deg) scaleY(0.8);
   }
 }
+
+/* Circular Dragonfly Animation */
+.dragonfly-circular-path {
+  animation: dragonfly-circular-movement 4s linear infinite;
+}
+
+@keyframes dragonfly-circular-movement {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Guardian Text Animation */
+.guardian-text-animation {
+  animation: guardian-text-appear 4s ease-in-out infinite;
+}
+
+@keyframes guardian-text-appear {
+  0%, 70% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  75%, 95% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
