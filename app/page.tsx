@@ -38,41 +38,53 @@ export default function Home() {
         <div className="p-6">
           {/* Logo with animation */}
           <div className="flex items-center gap-3 mb-8">
-            {/* Wireframe Sphere with Interconnected Nodes Logo */}
+            {/* Exact Glowing Interconnected Sphere Logo */}
             <div className="w-8 h-8 relative">
-              <div className="absolute inset-0">
+              <div className="absolute inset-0 animate-spin-slow">
                 <div className="w-full h-full relative">
-                  {/* Wireframe Sphere Structure */}
+                  {/* Glowing Sphere with Geodesic Pattern */}
                   <div className="absolute inset-0 rounded-full relative">
-                    {/* Geodesic Wireframe Lines */}
+                    {/* Complex Geodesic Network Lines */}
                     <div className="absolute inset-0">
-                      {/* Horizontal Wireframe Lines */}
-                      <div className="absolute top-1/4 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
-                      <div className="absolute top-1/2 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
-                      <div className="absolute top-3/4 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
+                      {/* Primary Horizontal Lines */}
+                      <div className="absolute top-1/5 left-1/5 right-1/5 h-px bg-cyan-400/80 transform rotate-6"></div>
+                      <div className="absolute top-2/5 left-1/5 right-1/5 h-px bg-cyan-400/80 transform -rotate-3"></div>
+                      <div className="absolute top-3/5 left-1/5 right-1/5 h-px bg-cyan-400/80 transform rotate-3"></div>
+                      <div className="absolute top-4/5 left-1/5 right-1/5 h-px bg-cyan-400/80 transform -rotate-6"></div>
                       
-                      {/* Vertical Wireframe Lines */}
-                      <div className="absolute left-1/4 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
-                      <div className="absolute left-1/2 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
-                      <div className="absolute left-3/4 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
+                      {/* Primary Vertical Lines */}
+                      <div className="absolute left-1/5 top-1/5 bottom-1/5 w-px bg-cyan-400/80 transform rotate-6"></div>
+                      <div className="absolute left-2/5 top-1/5 bottom-1/5 w-px bg-cyan-400/80 transform -rotate-3"></div>
+                      <div className="absolute left-3/5 top-1/5 bottom-1/5 w-px bg-cyan-400/80 transform rotate-3"></div>
+                      <div className="absolute left-4/5 top-1/5 bottom-1/5 w-px bg-cyan-400/80 transform -rotate-6"></div>
                       
-                      {/* Diagonal Wireframe Lines */}
-                      <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border-l border-t border-cyan-400/70 rounded-tl-full"></div>
-                      <div className="absolute top-1/4 right-1/4 w-1/2 h-1/2 border-r border-t border-cyan-400/70 rounded-tr-full"></div>
-                      <div className="absolute bottom-1/4 left-1/4 w-1/2 h-1/2 border-l border-b border-cyan-400/70 rounded-bl-full"></div>
-                      <div className="absolute bottom-1/4 right-1/4 w-1/2 h-1/2 border-r border-b border-cyan-400/70 rounded-br-full"></div>
+                      {/* Secondary Diagonal Lines */}
+                      <div className="absolute top-1/5 left-1/5 w-3/5 h-3/5 border-l border-t border-cyan-400/60 rounded-tl-full transform rotate-12"></div>
+                      <div className="absolute top-1/5 right-1/5 w-3/5 h-3/5 border-r border-t border-cyan-400/60 rounded-tr-full transform -rotate-12"></div>
+                      <div className="absolute bottom-1/5 left-1/5 w-3/5 h-3/5 border-l border-b border-cyan-400/60 rounded-bl-full transform -rotate-12"></div>
+                      <div className="absolute bottom-1/5 right-1/5 w-3/5 h-3/5 border-r border-b border-cyan-400/60 rounded-br-full transform rotate-12"></div>
                     </div>
                     
-                    {/* Bright Network Nodes */}
-                    <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
-                    <div className="absolute top-1/4 left-1/2 w-1 h-1 bg-cyan-400 rounded-full"></div>
-                    <div className="absolute top-1/4 right-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
-                    <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
-                    <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-cyan-400 rounded-full"></div>
-                    <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
-                    <div className="absolute bottom-1/4 left-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
-                    <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-cyan-400 rounded-full"></div>
-                    <div className="absolute bottom-1/4 right-1/4 w-1 h-1 bg-cyan-400 rounded-full"></div>
+                    {/* Glowing Network Nodes */}
+                    <div className="absolute top-1/5 left-1/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/5 left-2/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/5 left-3/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/5 right-1/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/5 left-1/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/5 left-2/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/5 left-3/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/5 right-1/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/5 left-1/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/5 left-2/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/5 left-3/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/5 right-1/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/5 left-1/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/5 left-2/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/5 left-3/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/5 right-1/5 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    
+                    {/* Glowing Halo Effect */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-400/20 blur-sm"></div>
                   </div>
                 </div>
               </div>
@@ -118,43 +130,55 @@ export default function Home() {
         {/* Hero Section */}
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            {/* Wireframe Sphere with Interconnected Nodes Logo */}
+            {/* Exact Glowing Interconnected Sphere Logo */}
             <div className="flex justify-center mb-8">
               <div className="relative">
                 <div className="w-40 h-40 relative">
-                  <div className="absolute inset-0">
+                  <div className="absolute inset-0 animate-spin-slow">
                     <div className="w-full h-full relative">
-                      {/* Wireframe Sphere Structure */}
+                      {/* Glowing Sphere with Geodesic Pattern */}
                       <div className="absolute inset-0 rounded-full relative">
-                        {/* Geodesic Wireframe Lines */}
+                        {/* Complex Geodesic Network Lines */}
                         <div className="absolute inset-0">
-                          {/* Horizontal Wireframe Lines */}
-                          <div className="absolute top-1/4 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
-                          <div className="absolute top-1/2 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
-                          <div className="absolute top-3/4 left-1/4 right-1/4 h-px bg-cyan-400/90"></div>
+                          {/* Primary Horizontal Lines */}
+                          <div className="absolute top-1/5 left-1/5 right-1/5 h-px bg-cyan-400/80 transform rotate-6"></div>
+                          <div className="absolute top-2/5 left-1/5 right-1/5 h-px bg-cyan-400/80 transform -rotate-3"></div>
+                          <div className="absolute top-3/5 left-1/5 right-1/5 h-px bg-cyan-400/80 transform rotate-3"></div>
+                          <div className="absolute top-4/5 left-1/5 right-1/5 h-px bg-cyan-400/80 transform -rotate-6"></div>
                           
-                          {/* Vertical Wireframe Lines */}
-                          <div className="absolute left-1/4 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
-                          <div className="absolute left-1/2 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
-                          <div className="absolute left-3/4 top-1/4 bottom-1/4 w-px bg-cyan-400/90"></div>
+                          {/* Primary Vertical Lines */}
+                          <div className="absolute left-1/5 top-1/5 bottom-1/5 w-px bg-cyan-400/80 transform rotate-6"></div>
+                          <div className="absolute left-2/5 top-1/5 bottom-1/5 w-px bg-cyan-400/80 transform -rotate-3"></div>
+                          <div className="absolute left-3/5 top-1/5 bottom-1/5 w-px bg-cyan-400/80 transform rotate-3"></div>
+                          <div className="absolute left-4/5 top-1/5 bottom-1/5 w-px bg-cyan-400/80 transform -rotate-6"></div>
                           
-                          {/* Diagonal Wireframe Lines */}
-                          <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border-l border-t border-cyan-400/70 rounded-tl-full"></div>
-                          <div className="absolute top-1/4 right-1/4 w-1/2 h-1/2 border-r border-t border-cyan-400/70 rounded-tr-full"></div>
-                          <div className="absolute bottom-1/4 left-1/4 w-1/2 h-1/2 border-l border-b border-cyan-400/70 rounded-bl-full"></div>
-                          <div className="absolute bottom-1/4 right-1/4 w-1/2 h-1/2 border-r border-b border-cyan-400/70 rounded-br-full"></div>
+                          {/* Secondary Diagonal Lines */}
+                          <div className="absolute top-1/5 left-1/5 w-3/5 h-3/5 border-l border-t border-cyan-400/60 rounded-tl-full transform rotate-12"></div>
+                          <div className="absolute top-1/5 right-1/5 w-3/5 h-3/5 border-r border-t border-cyan-400/60 rounded-tr-full transform -rotate-12"></div>
+                          <div className="absolute bottom-1/5 left-1/5 w-3/5 h-3/5 border-l border-b border-cyan-400/60 rounded-bl-full transform -rotate-12"></div>
+                          <div className="absolute bottom-1/5 right-1/5 w-3/5 h-3/5 border-r border-b border-cyan-400/60 rounded-br-full transform rotate-12"></div>
                         </div>
                         
-                        {/* Bright Network Nodes */}
-                        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full"></div>
-                        <div className="absolute top-1/4 left-1/2 w-2 h-2 bg-cyan-400 rounded-full"></div>
-                        <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-cyan-400 rounded-full"></div>
-                        <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-cyan-400 rounded-full"></div>
-                        <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-cyan-400 rounded-full"></div>
-                        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-cyan-400 rounded-full"></div>
-                        <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full"></div>
-                        <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-cyan-400 rounded-full"></div>
-                        <div className="absolute bottom-1/4 right-1/4 w-2 h-2 bg-cyan-400 rounded-full"></div>
+                        {/* Glowing Network Nodes */}
+                        <div className="absolute top-1/5 left-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-1/5 left-2/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-1/5 left-3/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-1/5 right-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-2/5 left-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-2/5 left-2/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-2/5 left-3/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-2/5 right-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-3/5 left-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-3/5 left-2/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-3/5 left-3/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute top-3/5 right-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute bottom-1/5 left-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute bottom-1/5 left-2/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute bottom-1/5 left-3/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <div className="absolute bottom-1/5 right-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        
+                        {/* Glowing Halo Effect */}
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-400/20 blur-sm"></div>
                       </div>
                     </div>
                   </div>
