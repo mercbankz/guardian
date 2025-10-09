@@ -45,23 +45,8 @@ export default function SignupPage() {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            {/* Glowing Sword Logo */}
-            <div className="w-8 h-8 relative cursor-pointer hover:scale-110 transition-transform duration-300">
-              <div className="relative w-full h-full">
-                {/* Glowing Sword Icon */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-6 h-8 relative">
-                    {/* Sword Blade */}
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-b from-cyan-400 to-green-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
-                    {/* Sword Handle */}
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3 h-2 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full"></div>
-                    {/* Cross Guard */}
-                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-0.5 bg-gradient-to-r from-cyan-400 to-green-400"></div>
-                    {/* Glow Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-400/30 to-green-400/30 blur-sm rounded-full"></div>
-                  </div>
-                </div>
-              </div>
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center logo-hover">
+              <Brain className="w-5 h-5 text-black" />
             </div>
             <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
               Guardian

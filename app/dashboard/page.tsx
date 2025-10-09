@@ -3,13 +3,13 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import {
-  Activity,
-  AlertTriangle,
-  ArrowDown,
-  HeartPulse,
-  ShieldCheck,
-  TrendingDown,
+import { 
+  Activity, 
+  AlertTriangle, 
+  ArrowDown, 
+  HeartPulse, 
+  ShieldCheck, 
+  TrendingDown, 
   TrendingUp,
   XCircle,
   Trophy,
@@ -148,8 +148,8 @@ export default function Dashboard() {
       borderColor: 'rgba(59, 130, 246, 1)',
       backgroundColor: 'rgba(59, 130, 246, 0.1)',
       borderWidth: 3,
-      fill: true,
-      tension: 0.4,
+        fill: true,
+        tension: 0.4,
       pointBackgroundColor: 'rgba(59, 130, 246, 1)',
       pointBorderColor: '#fff',
       pointBorderWidth: 2,
@@ -265,20 +265,68 @@ export default function Dashboard() {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            {/* Glowing Sword Logo */}
+            {/* Official Guardian Logo with Hover Effect */}
             <div className="w-8 h-8 relative cursor-pointer hover:scale-110 transition-transform duration-300">
-              <div className="relative w-full h-full">
-                {/* Glowing Sword Icon */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-6 h-8 relative">
-                    {/* Sword Blade */}
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-b from-cyan-400 to-green-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
-                    {/* Sword Handle */}
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3 h-2 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full"></div>
-                    {/* Cross Guard */}
-                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-0.5 bg-gradient-to-r from-cyan-400 to-green-400"></div>
-                    {/* Glow Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-400/30 to-green-400/30 blur-sm rounded-full"></div>
+              <div className="absolute inset-0 animate-spin-slow">
+                <div className="w-full h-full relative">
+                  {/* Glowing Sphere with Complex Geodesic Pattern */}
+                  <div className="absolute inset-0 rounded-full relative">
+                    {/* Complex Geodesic Network Lines - Exact Match */}
+                    <div className="absolute inset-0">
+                      {/* Horizontal Geodesic Lines */}
+                      <div className="absolute top-1/6 left-1/6 right-1/6 h-px bg-cyan-400/90 transform rotate-12"></div>
+                      <div className="absolute top-2/6 left-1/6 right-1/6 h-px bg-cyan-400/90 transform rotate-6"></div>
+                      <div className="absolute top-3/6 left-1/6 right-1/6 h-px bg-cyan-400/90"></div>
+                      <div className="absolute top-4/6 left-1/6 right-1/6 h-px bg-cyan-400/90 transform -rotate-6"></div>
+                      <div className="absolute top-5/6 left-1/6 right-1/6 h-px bg-cyan-400/90 transform -rotate-12"></div>
+                      
+                      {/* Vertical Geodesic Lines */}
+                      <div className="absolute left-1/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90 transform rotate-12"></div>
+                      <div className="absolute left-2/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90 transform rotate-6"></div>
+                      <div className="absolute left-3/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90"></div>
+                      <div className="absolute left-4/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90 transform -rotate-6"></div>
+                      <div className="absolute left-5/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90 transform -rotate-12"></div>
+                      
+                      {/* Diagonal Geodesic Lines */}
+                      <div className="absolute top-1/6 left-1/6 w-4/6 h-4/6 border-l border-t border-cyan-400/70 rounded-tl-full transform rotate-15"></div>
+                      <div className="absolute top-1/6 right-1/6 w-4/6 h-4/6 border-r border-t border-cyan-400/70 rounded-tr-full transform -rotate-15"></div>
+                      <div className="absolute bottom-1/6 left-1/6 w-4/6 h-4/6 border-l border-b border-cyan-400/70 rounded-bl-full transform -rotate-15"></div>
+                      <div className="absolute bottom-1/6 right-1/6 w-4/6 h-4/6 border-r border-b border-cyan-400/70 rounded-br-full transform rotate-15"></div>
+                      
+                      {/* Additional Geodesic Lines for Complex Pattern */}
+                      <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 border border-cyan-400/60 rounded-full transform rotate-45"></div>
+                      <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 border border-cyan-400/60 rounded-full transform -rotate-45"></div>
+                    </div>
+                    
+                    {/* Glowing Network Nodes - Exact Pattern */}
+                    <div className="absolute top-1/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    
+                    {/* Glowing Halo Effect */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/30 to-blue-400/30 blur-sm"></div>
                   </div>
                 </div>
               </div>
@@ -287,7 +335,7 @@ export default function Dashboard() {
               Guardian
             </Link>
             <Moon className="w-5 h-5 text-white ml-auto cursor-pointer hover:text-cyan-400 transition-colors" />
-          </div>
+        </div>
 
           {/* Navigation */}
           <nav className="space-y-2">
@@ -326,13 +374,13 @@ export default function Dashboard() {
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-white mb-2">Portfolio Dashboard</h1>
             <p className="text-gray-400">Real-time portfolio tracking and AI-powered insights</p>
-          </div>
+      </div>
 
           {/* Trading Bots Status */}
           <div className="grid grid-cols-3 gap-6 mb-8">
             {tradingBots.map((bot) => (
               <div key={bot.id} className="card p-6 hover-glow-blue cursor-pointer neon-glow-blue">
-                <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
                       <Bot className="w-6 h-6 text-black" />
@@ -405,10 +453,10 @@ export default function Dashboard() {
                         <p className="text-white font-bold">${asset.value.toLocaleString()}</p>
                         <p className="text-green-400 text-sm">{asset.change}</p>
                       </div>
-                    </div>
-                  ))}
+          </div>
+        ))}
                 </div>
-              </div>
+      </div>
 
               {/* Venture Section */}
               <div className="mb-6">
@@ -430,9 +478,9 @@ export default function Dashboard() {
                         <p className="text-green-400 text-sm">{asset.change}</p>
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
+              ))}
+            </div>
+          </div>
 
               {/* Presale Section */}
               <div className="mb-6">
@@ -455,8 +503,8 @@ export default function Dashboard() {
                       </div>
                     </div>
                   ))}
-                </div>
-              </div>
+          </div>
+        </div>
 
               {/* IPO Section */}
               <div>
@@ -479,9 +527,9 @@ export default function Dashboard() {
                       </div>
                     </div>
                   ))}
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
             {/* Financial Events & Alerts */}
             <div className="card p-6 hover-glow-blue cursor-pointer neon-glow-blue">
@@ -491,7 +539,7 @@ export default function Dashboard() {
                   <div key={index} className="flex items-center justify-between p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all">
                     <div className="flex items-center gap-4">
                       <div className={`w-3 h-3 ${getEventColor(event.color)} rounded-full`}></div>
-                      <div>
+      <div>
                         <h3 className="text-white font-semibold">{event.name}</h3>
                         <p className="text-gray-400 text-sm">{event.description}</p>
                         <p className="text-gray-500 text-xs">{event.date}</p>
@@ -500,7 +548,7 @@ export default function Dashboard() {
                     <div className="flex items-center gap-3">
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(event.status)} text-white`}>
                         {event.status}
-                      </span>
+                  </span>
                       <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-lg transition-colors">
                         Set Alert
                       </button>
@@ -546,12 +594,12 @@ export default function Dashboard() {
                   <div className="flex items-center gap-3">
                     <div className="w-4 h-4 bg-orange-400 rounded-full"></div>
                     <span className="text-white font-semibold">Presale Tokens</span>
-                  </div>
+              </div>
                   <div className="text-right">
                     <p className="text-white font-bold">$560,000</p>
                     <p className="text-gray-400 text-sm">18.7%</p>
-                  </div>
-                </div>
+        </div>
+      </div>
                 <div className="flex items-center justify-between p-4 bg-white/5 rounded-lg">
                   <div className="flex items-center gap-3">
                     <div className="w-4 h-4 bg-purple-400 rounded-full"></div>
@@ -613,8 +661,8 @@ export default function Dashboard() {
                   <p className="text-gray-400 mb-2">Guardian Rank</p>
                   <p className="text-green-400 font-semibold mb-2">{ranking.performance}</p>
                   <p className="text-gray-500 text-sm">Stability: {ranking.stability}</p>
-                </div>
-              ))}
+            </div>
+          ))}
             </div>
           </div>
         </div>

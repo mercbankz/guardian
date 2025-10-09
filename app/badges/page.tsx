@@ -1,23 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  BarChart3,
-  Bot,
-  Users,
-  BookOpen,
-  Trophy,
-  Settings,
-  Moon,
-  Book,
-  Shield,
-  Star,
-  Crown,
-  Gem,
-  UserCheck,
-  Calendar,
-  Check
-} from "lucide-react";
+import { BarChart3, Bot, Users, BookOpen, Trophy, Settings, Moon, Book, Shield, Star, Crown, Diamond, UserCheck, Calendar, Check } from "lucide-react";
 
 export default function BadgesPage() {
   const badges = [
@@ -28,7 +12,7 @@ export default function BadgesPage() {
       tier: "gold",
       points: 25,
       icon: Book,
-      color: "from-blue-400 to-cyan-400"
+      color: "from-yellow-400 to-orange-400"
     },
     {
       id: 2,
@@ -37,7 +21,7 @@ export default function BadgesPage() {
       tier: "gold",
       points: 25,
       icon: Shield,
-      color: "from-green-400 to-emerald-400"
+      color: "from-yellow-400 to-orange-400"
     },
     {
       id: 3,
@@ -64,7 +48,7 @@ export default function BadgesPage() {
       tier: "platinum",
       points: 50,
       icon: Crown,
-      color: "from-red-400 to-pink-400"
+      color: "from-purple-400 to-pink-400"
     },
     {
       id: 6,
@@ -72,8 +56,8 @@ export default function BadgesPage() {
       description: "Complete all books in the library",
       tier: "platinum",
       points: 50,
-      icon: Gem,
-      color: "from-indigo-400 to-purple-400"
+      icon: Diamond,
+      color: "from-purple-400 to-pink-400"
     },
     {
       id: 7,
@@ -82,7 +66,7 @@ export default function BadgesPage() {
       tier: "platinum",
       points: 50,
       icon: UserCheck,
-      color: "from-cyan-400 to-blue-400"
+      color: "from-purple-400 to-pink-400"
     },
     {
       id: 8,
@@ -91,7 +75,24 @@ export default function BadgesPage() {
       tier: "platinum",
       points: 50,
       icon: Shield,
-      color: "from-emerald-400 to-green-400"
+      color: "from-purple-400 to-pink-400"
+    }
+  ];
+
+  const specialRewards = [
+    {
+      name: "Free Subscription Months",
+      description: "Earn 100 points to unlock 1 free month of Guardian AI Premium (max 6 months total)",
+      current: "0/6 months unlocked",
+      icon: Calendar,
+      color: "from-green-400 to-emerald-400"
+    },
+    {
+      name: "Ambassador Program",
+      description: "Refer 50 active users to earn the Ambassador badge and unlock 1 free year",
+      note: "This reward is exempt from the 6-month cap",
+      icon: UserCheck,
+      color: "from-purple-400 to-pink-400"
     }
   ];
 
@@ -110,20 +111,68 @@ export default function BadgesPage() {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            {/* Glowing Sword Logo */}
+            {/* Official Guardian Logo with Hover Effect */}
             <div className="w-8 h-8 relative cursor-pointer hover:scale-110 transition-transform duration-300">
-              <div className="relative w-full h-full">
-                {/* Glowing Sword Icon */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-6 h-8 relative">
-                    {/* Sword Blade */}
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-b from-cyan-400 to-green-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
-                    {/* Sword Handle */}
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3 h-2 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full"></div>
-                    {/* Cross Guard */}
-                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-0.5 bg-gradient-to-r from-cyan-400 to-green-400"></div>
-                    {/* Glow Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-400/30 to-green-400/30 blur-sm rounded-full"></div>
+              <div className="absolute inset-0 animate-spin-slow">
+                <div className="w-full h-full relative">
+                  {/* Glowing Sphere with Complex Geodesic Pattern */}
+                  <div className="absolute inset-0 rounded-full relative">
+                    {/* Complex Geodesic Network Lines - Exact Match */}
+                    <div className="absolute inset-0">
+                      {/* Horizontal Geodesic Lines */}
+                      <div className="absolute top-1/6 left-1/6 right-1/6 h-px bg-cyan-400/90 transform rotate-12"></div>
+                      <div className="absolute top-2/6 left-1/6 right-1/6 h-px bg-cyan-400/90 transform rotate-6"></div>
+                      <div className="absolute top-3/6 left-1/6 right-1/6 h-px bg-cyan-400/90"></div>
+                      <div className="absolute top-4/6 left-1/6 right-1/6 h-px bg-cyan-400/90 transform -rotate-6"></div>
+                      <div className="absolute top-5/6 left-1/6 right-1/6 h-px bg-cyan-400/90 transform -rotate-12"></div>
+                      
+                      {/* Vertical Geodesic Lines */}
+                      <div className="absolute left-1/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90 transform rotate-12"></div>
+                      <div className="absolute left-2/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90 transform rotate-6"></div>
+                      <div className="absolute left-3/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90"></div>
+                      <div className="absolute left-4/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90 transform -rotate-6"></div>
+                      <div className="absolute left-5/6 top-1/6 bottom-1/6 w-px bg-cyan-400/90 transform -rotate-12"></div>
+                      
+                      {/* Diagonal Geodesic Lines */}
+                      <div className="absolute top-1/6 left-1/6 w-4/6 h-4/6 border-l border-t border-cyan-400/70 rounded-tl-full transform rotate-15"></div>
+                      <div className="absolute top-1/6 right-1/6 w-4/6 h-4/6 border-r border-t border-cyan-400/70 rounded-tr-full transform -rotate-15"></div>
+                      <div className="absolute bottom-1/6 left-1/6 w-4/6 h-4/6 border-l border-b border-cyan-400/70 rounded-bl-full transform -rotate-15"></div>
+                      <div className="absolute bottom-1/6 right-1/6 w-4/6 h-4/6 border-r border-b border-cyan-400/70 rounded-br-full transform rotate-15"></div>
+                      
+                      {/* Additional Geodesic Lines for Complex Pattern */}
+                      <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 border border-cyan-400/60 rounded-full transform rotate-45"></div>
+                      <div className="absolute top-1/3 left-1/3 w-1/3 h-1/3 border border-cyan-400/60 rounded-full transform -rotate-45"></div>
+                    </div>
+                    
+                    {/* Glowing Network Nodes - Exact Pattern */}
+                    <div className="absolute top-1/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-2/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-3/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-4/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 left-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 left-2/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 left-3/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 left-4/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-1/6 right-1/6 w-1 h-1 bg-cyan-400 rounded-full animate-pulse"></div>
+                    
+                    {/* Glowing Halo Effect */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/30 to-blue-400/30 blur-sm"></div>
                   </div>
                 </div>
               </div>
@@ -170,7 +219,7 @@ export default function BadgesPage() {
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-white mb-2">Badges</h1>
-            <p className="text-gray-400">Earn achievements and unlock rewards through your Guardian journey</p>
+            <p className="text-gray-400">Earn achievements and unlock special rewards</p>
           </div>
 
           {/* Badges Grid */}
@@ -183,14 +232,14 @@ export default function BadgesPage() {
                     <div className={`w-16 h-16 bg-gradient-to-r ${badge.color} rounded-lg flex items-center justify-center mx-auto mb-4`}>
                       <IconComponent className="w-8 h-8 text-black" />
                     </div>
-                    <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold text-white mb-3 ${getTierColor(badge.tier)}`}>
+                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold text-white mb-3 ${getTierColor(badge.tier)}`}>
                       {getTierText(badge.tier)}
-                    </div>
+                    </span>
                     <h3 className="text-lg font-bold text-white mb-2">{badge.name}</h3>
                     <p className="text-gray-400 text-sm mb-3">{badge.description}</p>
-                    <div className="flex items-center justify-center gap-1 text-yellow-400">
-                      <Star className="w-4 h-4" />
-                      <span className="text-sm font-semibold">{badge.points} pts</span>
+                    <div className="flex items-center justify-center gap-1">
+                      <Star className="w-4 h-4 text-yellow-400" />
+                      <span className="text-white font-semibold">{badge.points} pts</span>
                     </div>
                   </div>
                 </div>
@@ -202,59 +251,46 @@ export default function BadgesPage() {
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-white mb-6">Special Rewards</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Free Subscription Months */}
-              <div className="card p-6 hover-glow-green cursor-pointer neon-glow-green">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                    <Calendar className="w-6 h-6 text-black" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-2">Free Subscription Months</h3>
-                    <p className="text-gray-400 mb-3">
-                      Earn 100 points to unlock 1 free month of Guardian AI Premium (max 6 months total)
-                    </p>
-                    <div className="text-green-400 font-semibold">
-                      Current: 0/6 months unlocked
+              {specialRewards.map((reward, index) => {
+                const IconComponent = reward.icon;
+                return (
+                  <div key={index} className="card p-6 hover-glow-blue cursor-pointer neon-glow-blue">
+                    <div className="flex items-start gap-4">
+                      <div className={`w-12 h-12 bg-gradient-to-r ${reward.color} rounded-lg flex items-center justify-center flex-shrink-0`}>
+                        <IconComponent className="w-6 h-6 text-black" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold text-white mb-2">{reward.name}</h3>
+                        <p className="text-gray-400 mb-3">{reward.description}</p>
+                        {reward.current && (
+                          <p className="text-blue-400 font-semibold">Current: {reward.current}</p>
+                        )}
+                        {reward.note && (
+                          <p className="text-gray-500 text-sm mt-2">{reward.note}</p>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Ambassador Program */}
-              <div className="card p-6 hover-glow-purple cursor-pointer neon-glow-purple">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
-                    <UserCheck className="w-6 h-6 text-black" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-2">Ambassador Program</h3>
-                    <p className="text-gray-400 mb-3">
-                      Refer 50 active users to earn the Ambassador badge and unlock 1 free year
-                    </p>
-                    <div className="text-purple-400 font-semibold">
-                      This reward is exempt from the 6-month cap
-                    </div>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
 
-          {/* Progress Section */}
+          {/* Progress Summary */}
           <div className="card p-6 hover-glow-blue cursor-pointer neon-glow-blue">
-            <h2 className="text-2xl font-bold text-white mb-6">Your Progress</h2>
+            <h3 className="text-2xl font-bold text-white mb-4">Your Progress</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-2">0</div>
-                <div className="text-gray-400">Badges Earned</div>
+                <p className="text-gray-400">Badges Earned</p>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-400 mb-2">0</div>
-                <div className="text-gray-400">Total Points</div>
+                <p className="text-gray-400">Total Points</p>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-purple-400 mb-2">0</div>
-                <div className="text-gray-400">Rewards Unlocked</div>
+                <p className="text-gray-400">Rewards Unlocked</p>
               </div>
             </div>
           </div>
